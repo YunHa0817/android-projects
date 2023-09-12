@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SmartDrone"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#009688"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_design"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:text="로그인 정보" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/logout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="아이디" />
+            <TextView
+                android:id="@+id/logout_Name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="사용자명"/>
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_design"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:text="로그아웃"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/logout_Version"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_design"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:text="버전정보"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="ver 1.1.0"/>
+
+</LinearLayout>

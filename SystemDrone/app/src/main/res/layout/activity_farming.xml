@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="농업자재마켓"/>
+    </TableRow>
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/farming"
+            android:onClick="onClick"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="농약정보서비스"/>
+    </TableRow>
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/agricultural_chemicals"
+            android:onClick="onClick"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="작물보호협회"/>
+    </TableRow>
+    <TableRow android:layout_weight="1">
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/crop"
+            android:onClick="onClick"/>
+    </TableRow>
+
+
+</TableLayout>

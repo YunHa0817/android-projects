@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SmartDrone"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#009688"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/userid"
+        android:layout_centerHorizontal="true"
+        android:hint="아이디"
+        android:layout_marginTop="151dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/userpw1"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호"
+        android:layout_below="@id/userid"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:id="@+id/login"
+        android:text="로그인"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/userpw1"
+        android:layout_toStartOf="@+id/signup"
+        android:onClick="login"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:background="@drawable/button_design"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="회원가입"
+        android:id="@+id/signup"
+        android:textAllCaps="false"
+        android:layout_alignTop="@id/login"
+        android:layout_alignEnd="@+id/userpw1"
+        android:onClick="onClick"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:background="@drawable/button_design"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 저장"
+        android:id="@+id/idSave"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

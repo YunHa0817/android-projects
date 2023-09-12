@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SystemDrone</string>
+    <string name="menu_mode">메뉴를 선택하시오</string>
+
+    <string-array name="mode_array">
+        <item>농약 뿌리기</item>
+        <item>물뿌리기</item>
+        <item>작물재배</item>
+    </string-array>
+</resources>

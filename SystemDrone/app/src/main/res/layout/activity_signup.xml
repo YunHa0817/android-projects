@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SmartDrone"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#009688"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"/>
+
+            <EditText
+                android:id="@+id/su_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="사용자 이름 입력하세요."
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일"/>
+            <EditText
+                android:id="@+id/su_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="이메일 입력하세요."
+                android:inputType="textEmailAddress"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"/>
+            <EditText
+                android:id="@+id/su_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="아이디 입력하세요."
+                android:inputType="text" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"/>
+            <EditText
+                android:id="@+id/su_Pw1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="비밀번호 입력하세요."
+                android:inputType="textPassword" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 재입력"/>
+            <EditText
+                android:id="@+id/su_Pw2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="비밀번호 재입력하세요."
+                android:inputType="textPassword" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/signupsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="insert"/>
+</LinearLayout>
